@@ -1,10 +1,16 @@
 /*** MAIN STYLE ***/
 
+html { 
+	background: url('../images/bg_body.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
 body {
-	padding: 20px 0;
+	padding: 0;
 	margin: 0; 
 	font-family: Verdana, Tahoma, arial, sans-serif;
-	background: #1a1a1a;
 	font-size: 12px;
 }
 
@@ -38,9 +44,9 @@ li {
 }
 
 #wrapper {
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 10px 10px 10px 10px;
-	margin: 10px auto;
+	margin: 20px auto;
 	padding: 10px 0;
 	width: 960px;
 }
@@ -58,6 +64,7 @@ li {
 }
 
 #topNavigation  ul {
+	z-index: 10000;
 }
 
 #topNavigation ul li.level1,
@@ -128,49 +135,132 @@ li {
 /* --- CONTENT --- */
 
 #content {
-	margin: 10px 40px;
-	overflow: hidden;
+	margin: 65px 40px;
+	z-index: 100;
 }
 
-ul#arrows {
-	overflow: hidden;
+#arrows {
+	position: relative;
+	display: block;
+	height: 42px;
+	width: 856px;
+	margin: auto 10px;
 }
 
-ul#arrows li {	
-	background: transparent url(../images/sprite_arrows.png) top right no-repeat;
-	float: left;
-	height: 40px;
-	width: 25%;
+#arrows a {
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	display: box;
+	box-pack: center;
+	box-align: center;
+	float: right;
+	margin-left: -35px;
+	height: 42px;
+	width: 239px;
+	background-image: url('../images/sprite_arrows.png');
+	background-repeat: no-repeat;
+	background-position: -239px 0;
+	text-decoration: none;
+}
+
+#arrows a:last-child {
+	margin-left: 0;
+}
+
+#arrows a:hover,
+#arrows a.active {
+	background-position: 0 0;
+	color: white;
 }
 
 .column {
+	margin: 25px 5px 0 5px;
 	display: inline-block;
-	width: 50%;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+.column p {
+	-webkit-margin-before: 0;
+	-moz-margin-before: 0;
+	margin-before:0;
 }
 
 /* --- CARROUSEL -- */
 
 #carrousel {
     border: 1px solid #000000;
-    float: left;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
     overflow: hidden;
     position: relative;
-    width: 878px;
+    width: 880px;
+    height: 150px
 }
 
 #carrousel,
-#carrousel .arrow,
-#carrousel ul li.slide {
+#carrousel .arrow {
 	height: 150px;
 }
 
+#carrousel .container {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 880px;
+    height: 150px
+}
+
+#carrousel .container .subcontainer {
+    position: absolute;
+    left: 0;
+    display: -webkit-box;
+    -webkit-box-pack: left;
+    display: -moz-box;
+    -moz-box-pack: left
+    display: box;
+    box-pack: left;
+}
+
+#carrousel .container .subcontainer div {
+    display: block;
+    height: 150px;
+    width: 220px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
 #carrousel .arrow {
-	background: transparent url(../images/sprite_carrousel_arrows.png) top left no-repeat;
-	width: 40px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/sprite_carrousel_arrows.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 54px;
+    height: 150px;
+}
+
+#carrousel .arrow:hover {
+    background-color: rgba(50,100,120,0.3);
+}
+#carrousel .arrow:active {
+    background-color: rgba(50,100,120,0.7);
 }
 
 #carrousel .arrow.right {
-	background-position: bottom left;
+    left: 826px;
+    background-position: 0 -151px;
 }
 
 #carrousel ul {

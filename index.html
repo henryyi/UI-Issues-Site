@@ -4,14 +4,12 @@
 <!--CSS -->
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 <!--JavaScript -->
-    <script src="/jquery/jquery-1.5.2.js" type="text/javascript"></script>
-    <script src="/js/scripts.js" type="text/javascript"></script>
+    <!-- script src="/jquery/jquery-1.5.2.js" type="text/javascript"></script -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/jquery.kinetic.js" type="text/javascript"></script>
 </head>
 <body>
-    <div id="body_bg">
-		<img src="images/bg_body.png" />
-	</div>
-    
 	<!-- wrapper -->
 	<div id="wrapper">
         <h1>Basic Test Page</h1>
@@ -250,49 +248,30 @@
 		<div id="content">
 			
 			<!-- arrows -->
-			<ul id="arrows">
-				<li>
-					<a href="#">Step 1</a>
-				</li>
-				<li>
-					<a href="#">Step 2</a>
-				</li>
-				<li>
-					<a href="#">Step 3</a>
-				</li>
-				<li>
-					<a href="#">Step 4</a>
-				</li>
-			</ul>
+			<div id="arrows">
+        		<a href="#"><span>Step 4</span></a>
+        		<a href="#"><span>Step 3</span></a>
+        		<a href="#"><span>Step 2</span></a>
+        		<a href="#" class="active"><span>Step 1</span></a>
+        	</div>
 			<!-- / arrows -->
 			
 			<!-- column -->
 			<div class="column">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.
-			</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.
-			</p>
-			</div>
-			<!-- / column -->
-			
-			<div class="column">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.
-			</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.
-			</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nisi quis lorem lacinia porttitor in quis enim. Sed fringilla augue non massa consectetur eu molestie sem egestas. Pellentesque iaculis dui ut metus scelerisque iaculis. Fusce eget sem eu erat suscipit condimentum at id ipsum. Morbi lobortis justo at nisi euismod suscipit. Mauris mi est, volutpat ac congue sed, sollicitudin eu dolor. Vivamus pretium erat id velit mattis eu bibendum velit faucibus. Integer in elit odio. Vestibulum ut lorem lacus, a rhoncus enim. Nam sed consequat libero. Nam convallis, lorem id imperdiet lobortis, nisi elit convallis mi, vitae tempor purus metus vel quam. Nulla pretium enim ac nunc fermentum in imperdiet felis cursus.</p>
 			</div>
 			<!-- / column -->
 			
 			<!-- carrousel -->
 			<div id="carrousel">
+                                <div class="container">
+                                    <div class="subcontainer"></div>
+                                </div>
 				<div class="arrow left"></div>
 				<div class="arrow right"></div>
-				<ul>
-					<li class="slide slide1"></li>
-					<li class="slide slide2"></li>
-					<li class="slide slide3"></li>
-					<li class="slide slide4"></li>
-					<li class="slide slide5"></li>
-					<li class="slide slide6"></li>
-				</ul>
 			</div>
 			<!-- / carrousel -->
 			

@@ -1,0 +1,28 @@
+{
+    "slidimages": [
+        {
+            "path": "images/slide1.jpg",
+            "caption": "Fred in a laptop"
+        },
+        {
+            "path": "images/slide2.jpg",
+            "caption": "From napkin sketch to market ready!"
+        },
+        {
+            "path": "images/slide3.jpg",
+            "caption": "Macadamia nuts"
+        },
+        {
+            "path": "images/slide4.jpg",
+            "caption": "Scott"
+        },
+        {
+            "path": "images/slide5.jpg",
+            "caption": "UX in action"
+        },
+        {
+            "path": "images/slide6.jpg",
+            "caption": "Some marking photo"
+        }
+    ]
+}
