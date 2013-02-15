@@ -135,7 +135,7 @@ li {
 /* --- CONTENT --- */
 
 #content {
-	margin: 65px 40px;
+	margin: 65px 40px 10px 40px;
 	z-index: 100;
 }
 
@@ -206,7 +206,7 @@ li {
 
 #carrousel,
 #carrousel .arrow {
-	height: 150px;
+    height: 150px;
 }
 
 #carrousel .container {
