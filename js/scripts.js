@@ -17,18 +17,54 @@ $(document).ready( function() {
     	return false;
     });
     
+    function setCarrouselImages(data) {
+        var container = $('.container .subcontainer', '#carrousel');
+        $.each(data.slidimages, function(i, image) {
+            if (image.path) {
+                var div = $('<div></div>');
+                div.css('background-image', 'url("' + image.path + '")');
+                div.attr('title', image.caption);
+                div.appendTo(container);
+            }
+        });
+    };
+    
     // load images for carousel
     $.getJSON('slideimages.json')
         .success(function(data) {
-            var container = $('.container .subcontainer', '#carrousel');
-            $.each(data.slidimages, function(i, image) {
-                if (image.path) {
-                    var div = $('<div></div>');
-                    div.css('background-image', 'url("' + image.path + '")');
-                    div.attr('title', image.caption);
-                    div.appendTo(container);
-                }
-            });
+            setCarrouselImages(data);
+        })
+        .error(function(){
+            // ajax failed, just use hard coded values
+            setCarrouselImages(
+                {
+                    "slidimages": [
+                        {
+                            "path": "images/slide1.jpg",
+                            "caption": "Fred in a laptop"
+                        },
+                        {
+                            "path": "images/slide2.jpg",
+                            "caption": "From napkin sketch to market ready!"
+                        },
+                        {
+                            "path": "images/slide3.jpg",
+                            "caption": "Macadamia nuts"
+                        },
+                        {
+                            "path": "images/slide4.jpg",
+                            "caption": "Scott"
+                        },
+                        {
+                            "path": "images/slide5.jpg",
+                            "caption": "UX in action"
+                        },
+                        {
+                            "path": "images/slide6.jpg",
+                            "caption": "Some marking photo"
+                        }
+                    ]
+                });
         });
  
     // carousel handling
