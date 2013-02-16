@@ -3,3 +3,6 @@
 3- Style top arrows to match mock up.  Needs to turn blue and white text when hovering over it
 4- Make the wrapper semi transparent white
 5- Style and make carrousel at the bottom functionnal
+
+NOTES:
+- sprite_arrows.png had to be modified because the first arrow's tip gets chopped off by one pixel.
